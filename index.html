@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Karl Castillo</title>
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,700' rel='stylesheet' type='text/css'>
+        <link type="text/css" rel="stylesheet" href="bower_components/semantic-ui/dist/semantic.min.css" media="all" />
+    </head>
+    <body>
+        <nav id="menu" class="ui right vertical sidebar uppercase menu">
+            <a class="auto scroll button item" data-target="about">about</a>
+            <a class="auto scroll button item" data-target="skills">skills</a>
+            <a class="auto scroll button item" data-target="experience">experience</a>
+            <a class="auto scroll button item" data-target="education">education</a>
+            <a class="auto scroll button item" data-target="portfolio">portfolio</a>
+            <a class="contact" data-target="contact">contact</a>
+        </nav>
+        <div class="pusher">
+            <div class="solo right menu toggle">
+                <a title="Menu"><i class="align justify icon"></i></a>
+            </div>
+            <header>
+                <h1 class="ui uppercase header">
+                    <div class="content">
+                        karl castillo
+                        <div class="sub header">web developer by day, dragonboat paddler by night</div>
+                    </div>
+                </h1>
+                <div class="curtain">
+                    <a class="auto scroll button">
+                        <i class="chevron down icon"></i>
+                    </a>
+                </div>
+            </header>
+            <section id="about" class="center aligned about section">
+                <header>
+                    <h2 class="ui uppercase header">about me</h2>
+                </header>
+                <div class="content">
+                    <p>
+                        My name is Karl Castillo and I'm a web developer - front and back - and a Dragonboat coach currently residing in Vancouver, BC, Canada. I have a passion for learning new technology may it be for my career, entertainment or for my sport. As a coach, I have to deal, build relationships, and encourage different types of people. 
+                    </p>
+                </div>
+            </section>
+            <section id="skills" class="center aligned skills section">
+                <header>
+                    <h2 class="ui uppercase header">my arsenal</h2>
+                </header>
+                <div class="ui content grid">
+                    <div class="three column row">
+                        <div class="column">
+                            <i class="html5 icon"></i>
+                            HTML
+                        </div>
+                        <div class="column">
+                            <i class="css3 icon"></i>
+                            CSS, SASS, LESS
+                        </div>
+                        <div class="column">
+                            <i class="code icon"></i>
+                            JS, PHP, Python
+                        </div>
+                    </div>
+                    <div class="three column row">
+                        <div class="column">
+                            <i class="grid layout icon"></i>
+                            Bootstrap, Semantic
+                        </div>
+                        <div class="column">
+                            <i class="puzzle icon"></i>
+                            AngularJS, Django
+                        </div>
+                        <div class="column">
+                            <i class="git icon"></i>
+                            Git, Github, Gitlab
+                        </div>
+                    </div>
+                    <div class="three column row">
+                        <div class="column">
+                            <i class="linux icon"></i>
+                            Ubuntu
+                        </div>
+                        <div class="column">
+                            <i class="server icon"></i>
+                            Server Management
+                        </div>
+                        <div class="column">
+                            <i class="database icon"></i>
+                            MySQL, PostgreSQL
+                        </div>
+                    </div>
+                    <div class="three column row">
+                        <div class="column">
+                            <i class="users icon"></i>
+                            Team Management
+                        </div>
+                        <div class="column">
+                            <i class="thumbs outline up icon"></i>
+                            Social Media
+                        </div>
+                        <div class="column">
+                            <i class="file pdf outline icon"></i>
+                            Adobe Illustrator, Adobe Photoshop
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--
+            <section id="experience" class="center aligned experience section">
+                <header>
+                    <h2 class="ui uppercase header">my experience</h2>
+                </header>
+            </section>
+            <section id="education" class="center aligned education section">
+                <header>
+                    <h2 class="ui uppercase header">my education</h2>
+                </header>
+            </section>
+            -->
+            <section id="portfolio" class="center aligned portfolio section">
+                <header>
+                    <h2 class="ui uppercase header">my portfolio</h2>
+                </header>
+                <div class="ui content grid">
+                    <div class="three column row">
+                        <div class="ui move up reveal column">
+                            <div class="visible content"><img src="assets/images/mannicon.png" class="ui bordered image" alt="Mann Icon" /></div>
+                            <div class="hidden content">
+                                <h3 class="ui header">Mann Icon (2014)</h3>
+                                <a class="project link" href="http://koralarts.github.io/mannicon/" title="Mann Icon">View Project</a>
+                            </div>
+                        </div>
+                        <div class="ui move up reveal column">
+                            <div class="visible content"><img src="assets/images/phjelectric.png" class="ui bordered image" alt="PHJ Electric" /></div>
+                            <div class="hidden content">
+                                <h3 class="ui header">PHJ Electric (2013)</h3>
+                                <a class="project link" href="http://phjelectric.com/" title="PHJ Electric">View Project</a>
+                            </div>
+                        </div>
+                        <div class="ui move up reveal column">
+                            <div class="visible content"><img src="assets/images/longlife.png" class="ui bordered image" alt="Long Life Pet Nutrition Ltd." /></div>
+                            <div class="hidden content">
+                                <h3 class="ui header">Long Life Pet Pantry (2013)</h3>
+                                <a class="project link" href="http://www.longlifepetnutritionltd.com/" title="Long Life Pet Nutrition Limited">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="center aligned contact section">
+                <header>
+                    <h2 class="ui uppercase header">connect with me</h2>
+                </header>
+            </section>
+        </div>
+        <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/js/parallax.min.js"></script>
+        <script type="text/javascript" src="bower_components/semantic-ui/dist/semantic.min.js"></script>
+        <script type="text/javascript">
+            function setHeaderHeight() {
+                $('.pusher > header').css('height', $(window).height());
+            }
+            
+            $(function() {
+                $('#menu').sidebar('attach events', '.solo.right.menu.toggle > a');
+                $('a.auto.scroll').on('click', function(e) {
+                    
+                });
+                setHeaderHeight();
+                $(window).on('resize', setHeaderHeight());
+            });
+        </script>
+    </body>
+</html>

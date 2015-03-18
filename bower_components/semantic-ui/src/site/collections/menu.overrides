@@ -1,0 +1,27 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+.solo.menu.toggle {
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.solo.menu.toggle > a {
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}
+
+.solo.menu.button > a:hover {
+    color: @white;   
+}
+
+.solo.right.menu.toggle {
+    text-align: right;
+}

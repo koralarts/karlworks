@@ -1,0 +1,20 @@
+/*******************************
+         Site Overrides
+*******************************/
+.ui.uppercase.header {
+    text-transform: uppercase;
+}
+
+.pusher > header > .ui.header,
+.pusher > header > .ui.header .sub.header {
+    color: @white;   
+}
+
+.pusher > header > h1.ui.header {
+    text-align: center;
+    font-size: 5rem ;
+}
+
+section .ui.header {
+    color: @brandPrimaryColor;   
+}
