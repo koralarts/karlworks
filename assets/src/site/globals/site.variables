@@ -1,0 +1,10 @@
+/*******************************
+     User Global Variables
+*******************************/
+
+@pageFont: 'Roboto', sans-serif;
+@brandPrimaryColor: #057ff2;
+@brandPrimaryLight: #e6f3fe;
+@brandSecondaryColor: #824759;
+@brandSecondaryDark: #3B2F57;
+@orange: #FFB65C;

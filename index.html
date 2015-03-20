@@ -2,171 +2,222 @@
 <html>
     <head>
         <title>Karl Castillo</title>
-        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,700' rel='stylesheet' type='text/css'>
-        <link type="text/css" rel="stylesheet" href="semantic/dist/semantic.min.css" media="all" />
+        <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,100,700" rel="stylesheet" type="text/css" />
+        <link href="assets/css/animate.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="assets/dist/semantic.min.css" type="text/css" rel="stylesheet" media="all" />
     </head>
     <body>
         <nav id="menu" class="ui right vertical sidebar uppercase menu">
-            <a class="auto scroll button item" data-target="about">about</a>
-            <a class="auto scroll button item" data-target="skills">skills</a>
-            <a class="auto scroll button item" data-target="experience">experience</a>
-            <a class="auto scroll button item" data-target="education">education</a>
-            <a class="auto scroll button item" data-target="portfolio">portfolio</a>
-            <a class="contact" data-target="contact">contact</a>
+            <a class="auto scroll button item" data-target="home">
+                <span class="transition">home</span>
+            </a>
+            <a class="auto scroll button item" data-target="about">
+                <span class="transition">about</span>
+            </a>
+            <a class="auto scroll button item" data-target="skills">
+                <span class="transition">skills</span>
+            </a>
+            <a class="auto scroll button item" data-target="experience">
+                <span class="transition">experience</span>
+            </a>
+            <a class="auto scroll button item" data-target="education">
+                <span class="transition">education</span>
+            </a>
+            <a class="auto scroll button item" data-target="portfolio">
+                <span class="transition">portfolio</span>
+            </a>
+            <a class="auto scroll button item" data-target="contact">
+                <span class="transition">contact</span>
+            </a>
         </nav>
         <div class="pusher">
             <div class="solo right menu toggle">
-                <a title="Menu"><i class="align justify icon"></i></a>
+                <a class="transition" title="Menu"><i class="align justify icon"></i></a>
             </div>
-            <header>
+            <header id="home" class="header">
                 <h1 class="ui uppercase header">
                     <div class="content">
                         karl castillo
-                        <div class="sub header">web developer by day, dragonboat paddler by night</div>
+                        <div class="sub header">
+                            web developer by day, dragonboat paddler by night
+                            <div class="social widget">
+                                <a class="transition" href="http://facebook.com/khcastillo" title="Facebook"><i class="facebook icon"></i></a>
+                                <a class="transition" href="http://twitter.com/koralarts" title="Twitter"><i class="twitter icon"></i></a>
+                                <a class="transition" href="http://linkedin.com/in/khcastillo" title="LinkedIn"><i class="linkedin icon"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </h1>
                 <div class="curtain">
-                    <a class="auto scroll button">
+                    <a class="auto scroll transition button" data-target="about">
                         <i class="chevron down icon"></i>
                     </a>
                 </div>
             </header>
-            <section id="about" class="center aligned about section">
-                <header>
-                    <h2 class="ui uppercase header">about me</h2>
-                </header>
-                <div class="content">
-                    <p>
-                        My name is Karl Castillo and I'm a web developer - front and back - and a Dragonboat coach currently residing in Vancouver, BC, Canada. I have a passion for learning new technology may it be for my career, entertainment or for my sport. As a coach, I have to deal, build relationships, and encourage different types of people. 
-                    </p>
-                </div>
-            </section>
-            <section id="skills" class="center aligned skills section">
-                <header>
-                    <h2 class="ui uppercase header">my arsenal</h2>
-                </header>
-                <div class="ui content grid">
-                    <div class="three column row">
-                        <div class="column">
-                            <i class="html5 icon"></i>
-                            HTML
-                        </div>
-                        <div class="column">
-                            <i class="css3 icon"></i>
-                            CSS, SASS, LESS
-                        </div>
-                        <div class="column">
-                            <i class="code icon"></i>
-                            JS, PHP, Python
-                        </div>
+            <main class="content">
+                <section id="about" class="center aligned about section">
+                    <header>
+                        <h2 class="ui uppercase header">about me</h2>
+                    </header>
+                    <div class="content">
+                        <p>
+                            My name is Karl Castillo and I'm a web developer - front and back - and a Dragonboat coach currently residing in Vancouver, BC, Canada. I have a passion for learning new technology may it be for my career, entertainment or for my sport. As a coach, I have to deal, build relationships, and encourage different types of people. 
+                        </p>
                     </div>
-                    <div class="three column row">
-                        <div class="column">
-                            <i class="grid layout icon"></i>
-                            Bootstrap, Semantic
-                        </div>
-                        <div class="column">
-                            <i class="puzzle icon"></i>
-                            AngularJS, Django
-                        </div>
-                        <div class="column">
-                            <i class="git icon"></i>
-                            Git, Github, Gitlab
-                        </div>
-                    </div>
-                    <div class="three column row">
-                        <div class="column">
-                            <i class="linux icon"></i>
-                            Ubuntu
-                        </div>
-                        <div class="column">
-                            <i class="server icon"></i>
-                            Server Management
-                        </div>
-                        <div class="column">
-                            <i class="database icon"></i>
-                            MySQL, PostgreSQL
-                        </div>
-                    </div>
-                    <div class="three column row">
-                        <div class="column">
-                            <i class="users icon"></i>
-                            Team Management
-                        </div>
-                        <div class="column">
-                            <i class="thumbs outline up icon"></i>
-                            Social Media
-                        </div>
-                        <div class="column">
-                            <i class="file pdf outline icon"></i>
-                            Adobe Illustrator, Adobe Photoshop
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--
-            <section id="experience" class="center aligned experience section">
-                <header>
-                    <h2 class="ui uppercase header">my experience</h2>
-                </header>
-            </section>
-            <section id="education" class="center aligned education section">
-                <header>
-                    <h2 class="ui uppercase header">my education</h2>
-                </header>
-            </section>
-            -->
-            <section id="portfolio" class="center aligned portfolio section">
-                <header>
-                    <h2 class="ui uppercase header">my portfolio</h2>
-                </header>
-                <div class="ui content grid">
-                    <div class="three column row">
-                        <div class="ui move up reveal column">
-                            <div class="visible content"><img src="semantic/images/mannicon.png" class="ui bordered image" alt="Mann Icon" /></div>
-                            <div class="hidden content">
-                                <h3 class="ui header">Mann Icon (2014)</h3>
-                                <a class="project link" href="http://koralarts.github.io/mannicon/" title="Mann Icon">View Project</a>
+                </section>
+                <section id="skills" class="center aligned skills section">
+                    <header>
+                        <h2 class="ui uppercase header">my arsenal</h2>
+                    </header>
+                    <div class="ui content grid">
+                        <div class="wow three column row bounceInLeft">
+                            <div class="transition skill column">
+                                <i class="html5 icon"></i>
+                                HTML
+                            </div>
+                            <div class="transition skill column">
+                                <i class="css3 icon"></i>
+                                CSS, SASS, LESS
+                            </div>
+                            <div class="transition skill column">
+                                <i class="code icon"></i>
+                                JS, PHP, Python
                             </div>
                         </div>
-                        <div class="ui move up reveal column">
-                            <div class="visible content"><img src="semantic/images/phjelectric.png" class="ui bordered image" alt="PHJ Electric" /></div>
-                            <div class="hidden content">
-                                <h3 class="ui header">PHJ Electric (2013)</h3>
-                                <a class="project link" href="http://phjelectric.com/" title="PHJ Electric">View Project</a>
+                        <div class="wow three column row bounceInRight">
+                            <div class="transition skill column">
+                                <i class="grid layout icon"></i>
+                                Bootstrap, Semantic
+                            </div>
+                            <div class="transition skill column">
+                                <i class="puzzle icon"></i>
+                                AngularJS, Django
+                            </div>
+                            <div class="transition skill column">
+                                <i class="git icon"></i>
+                                Git, Github, Gitlab
                             </div>
                         </div>
-                        <div class="ui move up reveal column">
-                            <div class="visible content"><img src="semantic/images/longlife.png" class="ui bordered image" alt="Long Life Pet Nutrition Ltd." /></div>
-                            <div class="hidden content">
-                                <h3 class="ui header">Long Life Pet Pantry (2013)</h3>
-                                <a class="project link" href="http://www.longlifepetnutritionltd.com/" title="Long Life Pet Nutrition Limited">View Project</a>
+                        <div class="wow three column row bounceInLeft">
+                            <div class="transition skill column">
+                                <i class="linux icon"></i>
+                                Ubuntu
+                            </div>
+                            <div class="transition skill column">
+                                <i class="server icon"></i>
+                                Server Management
+                            </div>
+                            <div class="transition skill column">
+                                <i class="database icon"></i>
+                                MySQL, PostgreSQL
+                            </div>
+                        </div>
+                        <div class="wow three column row bounceInRight">
+                            <div class="transition skill column">
+                                <i class="users icon"></i>
+                                Team Management
+                            </div>
+                            <div class="transition skill column">
+                                <i class="thumbs outline up icon"></i>
+                                Social Media
+                            </div>
+                            <div class="transition skill column">
+                                <i class="file pdf outline icon"></i>
+                                Adobe Illustrator, Adobe Photoshop
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <section id="contact" class="center aligned contact section">
-                <header>
-                    <h2 class="ui uppercase header">connect with me</h2>
-                </header>
-            </section>
+                </section>
+                <!--
+                <section id="experience" class="center aligned experience section">
+                    <header>
+                        <h2 class="ui uppercase header">my experience</h2>
+                    </header>
+                </section>
+                <section id="education" class="center aligned education section">
+                    <header>
+                        <h2 class="ui uppercase header">my education</h2>
+                    </header>
+                </section>
+                -->
+                <section id="portfolio" class="center aligned portfolio section">
+                    <header>
+                        <h2 class="ui uppercase header">my portfolio</h2>
+                    </header>
+                    <div class="ui content grid">
+                        <div class="three column row">
+                            <div class="wow bounceIn ui move up reveal column">
+                                <div class="visible content"><img src="assets/images/mannicon.png" class="ui bordered image" alt="Mann Icon" /></div>
+                                <div class="hidden content">
+                                    <h3 class="ui header">Mann Icon (2014)</h3>
+                                    <a class="project link" href="http://koralarts.github.io/mannicon/" title="Mann Icon">View Project</a>
+                                </div>
+                            </div>
+                            <div class="wow bounceIn ui move up reveal column">
+                                <div class="visible content"><img src="assets/images/phjelectric.png" class="ui bordered image" alt="PHJ Electric" /></div>
+                                <div class="hidden content">
+                                    <h3 class="ui header">PHJ Electric (2013)</h3>
+                                    <a class="project link" href="http://phjelectric.com/" title="PHJ Electric">View Project</a>
+                                </div>
+                            </div>
+                            <div class="wow bounceIn ui move up reveal column">
+                                <div class="visible content"><img src="assets/images/longlife.png" class="ui bordered image" alt="Long Life Pet Nutrition Ltd." /></div>
+                                <div class="hidden content">
+                                    <h3 class="ui header">Long Life Pet Pantry (2013)</h3>
+                                    <a class="project link" href="http://www.longlifepetnutritionltd.com/" title="Long Life Pet Nutrition Limited">View Project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="contact" class="center aligned contact section">
+                    <header>
+                        <h2 class="ui uppercase header">connect with me</h2>
+                    </header>
+                    <div class="social widget content">
+                        <a class="transition" href="http://github.com/koralarts" title="Github">
+                            <i class="github icon"></i>
+                        </a>
+                        <a class="transition" href="http://facebook.com/khcastillo" title="Facebook">
+                            <i class="facebook icon"></i>
+                        </a>
+                        <a class="transition" href="http://twitter.com/koralarts" title="Twitter">
+                            <i class="twitter icon"></i>
+                        </a>
+                        <a class="transition" href="https://linkedin.com/in/khcastillo" title="Linkedin">
+                            <i class="linkedin icon"></i>
+                        </a>
+                        <a class="transition" href="https://stackoverflow.com/users/602086/koralarts" title="Stackoverflow">
+                            <i class="stackoverflow icon"></i>
+                        </a>
+                    </div>
+                </section>
+            </main>
         </div>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+        <script type="text/javascript" src="assets/dist/semantic.min.js"></script>
         <script type="text/javascript" src="assets/js/parallax.min.js"></script>
-        <script type="text/javascript" src="semantic/dist/semantic.min.js"></script>
+        <script type="text/javascript" src="assets/js/wow.min.js"></script>
         <script type="text/javascript">
             function setHeaderHeight() {
-                $('.pusher > header').css('height', $(window).height());
+                $('header.header').css('height', $(window).height());
             }
             
             $(function() {
-                $('#menu').sidebar('attach events', '.solo.right.menu.toggle > a');
+                var wow = new WOW();
+                $('#menu')
+                    .sidebar('setting', 'transition', 'overlay')
+                    .sidebar('attach events', '.solo.right.menu.toggle > a');
                 $('a.auto.scroll').on('click', function(e) {
-                    
+                    var target = $(this).data('target');
+                    $('#menu').sidebar('hide');
+                    $('html,body').animate({
+                        scrollTop: $('#'+target).offset().top 
+                    }, 'slow');
                 });
                 setHeaderHeight();
                 $(window).on('resize', setHeaderHeight());
+                wow.init();
             });
         </script>
     </body>

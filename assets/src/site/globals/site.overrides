@@ -1,8 +1,20 @@
 /*******************************
          Site Overrides
 *******************************/
+.transition,
+.transition * {
+    -webkit-transition: all 250ms ease-in-out;
+    -moz-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
+}
+
 .uppercase {
     text-transform: uppercase;
+}
+
+.parallax-window {
+    background: transparent;
 }
 
 .pusher > header {
@@ -12,9 +24,20 @@
 
 .pusher > header {
     background-image: url('../images/header-1.jpg');
-    //background-attachment: fixed;
     background-size: cover;
-    height: 100%;
+}
+
+.pusher > header .social.widget {
+    font-size: 3rem;
+    margin-top: 25px;
+}
+
+.pusher > header .social.widget a {
+    color: @white;
+}
+
+.pusher > header .social.widget a:hover {
+    color: @orange;
 }
 
 .curtain {
@@ -41,6 +64,7 @@
 .section {
     margin: auto;
     padding: 75px 25px;
+    background: @white;
 }
 
 .section header {
@@ -69,7 +93,12 @@
     font-size: 7rem;
     display: block;
     margin: 25px auto;
-    color: @brandPrimaryColor;
+    color: @orange;
+}
+
+.skills.section .skill.column:hover,
+.skills.section .skill.column:hover .icon {
+    color: @brandSecondaryDark;
 }
 
 .skills.section .column,
@@ -81,4 +110,24 @@
 .portfolio.section img {
     width: 100%;
     height: auto;
+}
+
+.contact.section {
+    background-color: @brandSecondaryDark;
+}
+
+.contact.section .header  {
+    color: @white;
+}
+
+.contact.section .social.widget {
+    font-size: 5rem;
+}
+
+.contact.section .social.widget a {
+    color: @white;
+}
+
+.contact.section .social.widget a:hover {
+    color: @orange;
 }

@@ -1,0 +1,48 @@
+/*******************************
+         Site Overrides
+*******************************/
+
+.ui.menu > a.item:hover {
+    background: none;
+    color: @orange;
+}
+
+.ui.vertical.menu {
+    background-color: @brandSecondaryDark;
+}
+
+.ui.sidebar.menu > .item {
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: @white;
+}
+
+.ui.vertical.menu .item {
+    position: relative;
+}
+
+.ui.vertical.menu .item span {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.ui.vertical.menu .item:after {
+    -webkit-transition: all 250ms ease-in-out;
+    -moz-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
+    content: attr(data-target);
+    position:absolute;
+    right: -200%;
+    left: 100%;
+}
+
+.ui.vertical.menu .item:hover span {
+    left: -200%;
+}
+
+.ui.vertical.menu .item:hover:after {
+    right: 0;
+    left: 0;
+}

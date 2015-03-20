@@ -16,5 +16,5 @@
 }
 
 section .ui.header {
-    color: @brandPrimaryColor;   
+    color: @brandSecondaryDark;   
 }

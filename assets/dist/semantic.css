@@ -668,8 +668,18 @@ input::selection {
          Site Overrides
 *******************************/
 
+.transition,
+.transition * {
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
 .uppercase {
   text-transform: uppercase;
+}
+
+.parallax-window {
+  background: transparent;
 }
 
 .pusher > header {
@@ -680,7 +690,19 @@ input::selection {
 .pusher > header {
   background-image: url("../images/header-1.jpg");
   background-size: cover;
-  height: 100%;
+}
+
+.pusher > header .social.widget {
+  font-size: 3rem;
+  margin-top: 25px;
+}
+
+.pusher > header .social.widget a {
+  color: #ffffff;
+}
+
+.pusher > header .social.widget a:hover {
+  color: #ffb65c;
 }
 
 .curtain {
@@ -707,6 +729,7 @@ input::selection {
 .section {
   margin: auto;
   padding: 75px 25px;
+  background: #ffffff;
 }
 
 .section header {
@@ -735,7 +758,12 @@ input::selection {
   font-size: 7rem;
   display: block;
   margin: 25px auto;
-  color: #057ff2;
+  color: #ffb65c;
+}
+
+.skills.section .skill.column:hover,
+.skills.section .skill.column:hover .icon {
+  color: #3b2f57;
 }
 
 .skills.section .column,
@@ -747,6 +775,26 @@ input::selection {
 .portfolio.section img {
   width: 100%;
   height: auto;
+}
+
+.contact.section {
+  background-color: #3b2f57;
+}
+
+.contact.section .header {
+  color: #ffffff;
+}
+
+.contact.section .social.widget {
+  font-size: 5rem;
+}
+
+.contact.section .social.widget a {
+  color: #ffffff;
+}
+
+.contact.section .social.widget a:hover {
+  color: #ffb65c;
 }
 /*!
  * # Semantic UI x.x - Button
@@ -5298,11 +5346,11 @@ a.ui.green.header:hover {
 }
 
 .ui.orange.header {
-  color: #e07b53 !important;
+  color: #ffb65c !important;
 }
 
 a.ui.orange.header:hover {
-  color: #e28560 !important;
+  color: #ffbd6b !important;
 }
 
 .ui.pink.header {
@@ -5358,7 +5406,7 @@ a.ui.yellow.header:hover {
 }
 
 .ui.orange.dividing.header {
-  border-bottom: 2px solid #e07b53;
+  border-bottom: 2px solid #ffb65c;
 }
 
 .ui.pink.dividing.header {
@@ -5680,7 +5728,7 @@ a.ui.inverted.yellow.header:hover {
 }
 
 section .ui.header {
-  color: #057ff2;
+  color: #3b2f57;
 }
 /*!
  * # Semantic UI x.x - Icon
@@ -18636,12 +18684,12 @@ ol.ui.horizontal.list li:before,
 
 .solo.menu.toggle > a {
   font-size: 3rem;
-  color: rgba(255, 255, 255, 0.8);
+  color: #ffffff;
   cursor: pointer;
 }
 
-.solo.menu.button > a:hover {
-  color: #ffffff;
+.solo.menu.toggle > a:hover {
+  color: #057ff2;
 }
 
 .solo.right.menu.toggle {
@@ -28147,6 +28195,49 @@ html.ios {
 /*******************************
          Site Overrides
 *******************************/
+
+.ui.menu > a.item:hover {
+  background: none;
+  color: #ffb65c;
+}
+
+.ui.vertical.menu {
+  background-color: #3b2f57;
+}
+
+.ui.sidebar.menu > .item {
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.ui.vertical.menu .item {
+  position: relative;
+}
+
+.ui.vertical.menu .item span {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.ui.vertical.menu .item:after {
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+  content: attr(data-target);
+  position: absolute;
+  right: -200%;
+  left: 100%;
+}
+
+.ui.vertical.menu .item:hover span {
+  left: -200%;
+}
+
+.ui.vertical.menu .item:hover:after {
+  right: 0;
+  left: 0;
+}
 /*!
  * # Semantic UI x.x - Sticky
  * http://github.com/semantic-org/semantic-ui/

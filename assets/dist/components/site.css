@@ -158,8 +158,16 @@ input::selection {
          Site Overrides
 *******************************/
 
+.transition,
+.transition * {
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
 .uppercase {
   text-transform: uppercase;
+}
+.parallax-window {
+  background: transparent;
 }
 .pusher > header {
   padding-top: 100px;
@@ -168,7 +176,16 @@ input::selection {
 .pusher > header {
   background-image: url('../images/header-1.jpg');
   background-size: cover;
-  height: 100%;
+}
+.pusher > header .social.widget {
+  font-size: 3rem;
+  margin-top: 25px;
+}
+.pusher > header .social.widget a {
+  color: #ffffff;
+}
+.pusher > header .social.widget a:hover {
+  color: #ffb65c;
 }
 .curtain {
   text-align: center;
@@ -191,6 +208,7 @@ input::selection {
 .section {
   margin: auto;
   padding: 75px 25px;
+  background: #ffffff;
 }
 .section header {
   margin-bottom: 75px;
@@ -213,7 +231,11 @@ input::selection {
   font-size: 7rem;
   display: block;
   margin: 25px auto;
-  color: #057ff2;
+  color: #ffb65c;
+}
+.skills.section .skill.column:hover,
+.skills.section .skill.column:hover .icon {
+  color: #3b2f57;
 }
 .skills.section .column,
 .portfolio.section .column {
@@ -223,4 +245,19 @@ input::selection {
 .portfolio.section img {
   width: 100%;
   height: auto;
+}
+.contact.section {
+  background-color: #3b2f57;
+}
+.contact.section .header {
+  color: #ffffff;
+}
+.contact.section .social.widget {
+  font-size: 5rem;
+}
+.contact.section .social.widget a {
+  color: #ffffff;
+}
+.contact.section .social.widget a:hover {
+  color: #ffb65c;
 }

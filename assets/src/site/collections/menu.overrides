@@ -14,12 +14,12 @@
 
 .solo.menu.toggle > a {
     font-size: 3rem;
-    color: rgba(255, 255, 255, 0.8);
+    color: @white;
     cursor: pointer;
 }
 
-.solo.menu.button > a:hover {
-    color: @white;   
+.solo.menu.toggle > a:hover {
+    color: @brandPrimaryColor;
 }
 
 .solo.right.menu.toggle {
