@@ -18,3 +18,15 @@
 section .ui.header {
     color: @brandSecondaryDark;   
 }
+
+@media only screen and (min-width: @mobileBreakpoint) and (max-width: @largestMobileScreen) {
+    
+    .pusher > header > h1.ui.header {
+        font-size: 3rem !important;
+    }
+    
+    .pusher > header > h1.ui.header .sub.header {
+        font-size: 1.5rem !important;
+    }
+    
+}

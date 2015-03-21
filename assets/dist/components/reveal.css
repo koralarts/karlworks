@@ -291,3 +291,6 @@
          Site Overrides
 *******************************/
 
+.ui.move.reveal {
+  white-space: normal;
+}

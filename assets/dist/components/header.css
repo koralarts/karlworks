@@ -608,3 +608,11 @@ a.ui.inverted.yellow.header:hover {
 section .ui.header {
   color: #3b2f57;
 }
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .pusher > header > h1.ui.header {
+    font-size: 3rem !important;
+  }
+  .pusher > header > h1.ui.header .sub.header {
+    font-size: 1.5rem !important;
+  }
+}

@@ -2,31 +2,33 @@
 <html>
     <head>
         <title>Karl Castillo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
         <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,100,700" rel="stylesheet" type="text/css" />
         <link href="assets/css/animate.css" rel="stylesheet" type="text/css" media="all" />
         <link href="assets/dist/semantic.min.css" type="text/css" rel="stylesheet" media="all" />
     </head>
     <body>
         <nav id="menu" class="ui right vertical sidebar uppercase menu">
-            <a class="auto scroll button item" data-target="home">
+            <a href="#home" class="auto scroll button item" data-target="home">
                 <span class="transition">home</span>
             </a>
-            <a class="auto scroll button item" data-target="about">
+            <a href="#about" class="auto scroll button item" data-target="about">
                 <span class="transition">about</span>
             </a>
-            <a class="auto scroll button item" data-target="skills">
+            <a href="#skills" class="auto scroll button item" data-target="skills">
                 <span class="transition">skills</span>
             </a>
-            <a class="auto scroll button item" data-target="experience">
+            <a href="#experience" class="auto scroll button item" data-target="experience">
                 <span class="transition">experience</span>
             </a>
-            <a class="auto scroll button item" data-target="education">
+            <a href="#education" class="auto scroll button item" data-target="education">
                 <span class="transition">education</span>
             </a>
-            <a class="auto scroll button item" data-target="portfolio">
+            <a href="#portfolio" class="auto scroll button item" data-target="portfolio">
                 <span class="transition">portfolio</span>
             </a>
-            <a class="auto scroll button item" data-target="contact">
+            <a href="#contact" class="auto scroll button item" data-target="contact">
                 <span class="transition">contact</span>
             </a>
         </nav>
@@ -70,61 +72,53 @@
                         <h2 class="ui uppercase header">my arsenal</h2>
                     </header>
                     <div class="ui content grid">
-                        <div class="wow three column row bounceInLeft">
-                            <div class="transition skill column">
-                                <i class="html5 icon"></i>
-                                HTML
-                            </div>
-                            <div class="transition skill column">
-                                <i class="css3 icon"></i>
-                                CSS, SASS, LESS
-                            </div>
-                            <div class="transition skill column">
-                                <i class="code icon"></i>
-                                JS, PHP, Python
-                            </div>
+                        <div class="wow bounceIn transition skill eight wide mobile four wide tablet four wide computer column">
+                            <i class="html5 icon"></i>
+                            HTML
                         </div>
-                        <div class="wow three column row bounceInRight">
-                            <div class="transition skill column">
-                                <i class="grid layout icon"></i>
-                                Bootstrap, Semantic
-                            </div>
-                            <div class="transition skill column">
-                                <i class="puzzle icon"></i>
-                                AngularJS, Django
-                            </div>
-                            <div class="transition skill column">
-                                <i class="git icon"></i>
-                                Git, Github, Gitlab
-                            </div>
+                        <div class="wow bounceIn transition skill eight wide mobile four wide tablet four wide computer column">
+                            <i class="css3 icon"></i>
+                            CSS, SASS, LESS
                         </div>
-                        <div class="wow three column row bounceInLeft">
-                            <div class="transition skill column">
-                                <i class="linux icon"></i>
-                                Ubuntu
-                            </div>
-                            <div class="transition skill column">
-                                <i class="server icon"></i>
-                                Server Management
-                            </div>
-                            <div class="transition skill column">
-                                <i class="database icon"></i>
-                                MySQL, PostgreSQL
-                            </div>
+                        <div class="wow bounceIn transition skill eight wide mobile four wide tablet four wide computer column">
+                            <i class="code icon"></i>
+                            JS, PHP, Python
                         </div>
-                        <div class="wow three column row bounceInRight">
-                            <div class="transition skill column">
-                                <i class="users icon"></i>
-                                Team Management
-                            </div>
-                            <div class="transition skill column">
-                                <i class="thumbs outline up icon"></i>
-                                Social Media
-                            </div>
-                            <div class="transition skill column">
-                                <i class="file pdf outline icon"></i>
-                                Adobe Illustrator, Adobe Photoshop
-                            </div>
+                        <div class="wow bounceIn transition skill eight wide mobile four wide tablet four wide computer column">
+                            <i class="grid layout icon"></i>
+                            Bootstrap, Semantic
+                        </div>
+                        <div class="wow bounceIn transition skill eight wide mobile four wide tablet four wide computer column">
+                            <i class="puzzle icon"></i>
+                            AngularJS, Django
+                        </div>
+                        <div class="wow bounceIn transition skill eight wide mobile four wide tablet four wide computer column">
+                            <i class="git icon"></i>
+                            Git, Github, Gitlab
+                        </div>
+                        <div class="wow bounceIn transition skill eight wide mobile four wide tablet four wide computer column">
+                            <i class="linux icon"></i>
+                            Ubuntu
+                        </div>
+                        <div class="wow bounceIn transition skill eight wide mobile four wide tablet four wide computer column">
+                            <i class="server icon"></i>
+                            Server Management
+                        </div>
+                        <div class="wow bounceIn transition skill eight wide mobile four wide tablet four wide computer column">
+                            <i class="database icon"></i>
+                            MySQL, PostgreSQL
+                        </div>
+                        <div class="wow bounceIn transition skill eight wide mobile four wide tablet four wide computer column">
+                            <i class="users icon"></i>
+                            Team Management
+                        </div>
+                        <div class="wow bounceIn transition skill eight wide mobile four wide tablet four wide computer column">
+                            <i class="thumbs outline up icon"></i>
+                            Social Media
+                        </div>
+                        <div class="wow bounceIn transition skill eight wide mobile four wide tablet four wide computer column">
+                            <i class="file pdf outline icon"></i>
+                            Adobe Illustrator, Adobe Photoshop
                         </div>
                     </div>
                 </section>
@@ -277,8 +271,11 @@
             </main>
         </div>
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script type="text/javascript" src="assets/dist/semantic.min.js"></script>
         <script type="text/javascript" src="assets/js/parallax.min.js"></script>
+        <script type="text/javascript" src="assets/js/isMobile.min.js"></script>
         <script type="text/javascript" src="assets/js/wow.min.js"></script>
         <script type="text/javascript">
             function setHeaderHeight() {
@@ -286,7 +283,9 @@
             }
             
             $(function() {
-                var wow = new WOW();
+                if(!isMobile.any) {
+                    var wow = new WOW();
+                }
                 $('#menu')
                     .sidebar('setting', 'transition', 'overlay')
                     .sidebar('attach events', '.solo.right.menu.toggle > a');
@@ -294,7 +293,7 @@
                     var target = $(this).data('target');
                     $('#menu').sidebar('hide');
                     $('html,body').animate({
-                        scrollTop: $('#'+target).offset().top 
+                        scrollTop: $('#'+target).position().top 
                     }, 'slow');
                 });
                 setHeaderHeight();
