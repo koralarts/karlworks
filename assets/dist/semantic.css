@@ -737,8 +737,13 @@ input::selection {
 }
 
 .section > .content {
-  margin: auto !important;
-  width: 75% !important;
+  margin: auto;
+  position: relative;
+}
+
+.section > .ui.content.grid {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section.center.aligned {
@@ -772,13 +777,86 @@ input::selection {
   font-size: 2.5rem;
 }
 
+.experience.section .timeline {
+  padding-top: 2em;
+  text-align: left;
+}
+
+.experience.section .timeline:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  width: 4px;
+  background: #ffb65c;
+}
+
+.experience.section .timeline .position {
+  height: 100px;
+}
+
+.position:nth-child(odd) .content {
+  position: absolute;
+  text-align: right;
+  right: 60%;
+}
+
+.position:nth-child(even) .content {
+  position: absolute;
+  left: 60%;
+  right: 0;
+}
+
+.experience.section .timeline .position .date.range {
+  background-color: #ffffff;
+  padding: 10px 0;
+  z-index: 999;
+  position: absolute;
+  left: 50%;
+  width: 150px;
+  margin-left: -75px;
+  text-align: center;
+}
+
+.experience.section .timeline .position .company {
+  font-size: 1.75rem;
+  font-weight: 800;
+  display: block;
+}
+
+.experience.section .timeline .position .company + span {
+  font-style: italic;
+}
+
+.education.section {
+  background-image: url("../images/education.png");
+}
+
+.education.section .grid {
+  text-align: center;
+}
+
+.education.section img {
+  width: 100%;
+  height: auto;
+}
+
+.education.section .degree {
+  font-size: 1.75rem;
+}
+
 .portfolio.section img {
   width: 100%;
   height: auto;
 }
 
+.portfolio.section .column a {
+  color: #1b1c1d;
+}
+
 .contact.section {
-  background-color: #3b2f57;
+  background-image: url("../images/contact.png");
 }
 
 .contact.section .header {
@@ -791,10 +869,38 @@ input::selection {
 
 .contact.section .social.widget a {
   color: #ffffff;
+  text-align: center;
 }
 
 .contact.section .social.widget a:hover {
   color: #ffb65c;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .experience.section .timeline {
+    padding-top: 2em;
+    text-align: left;
+  }
+
+  .experience.section .timeline:before {
+    left: 0;
+  }
+
+  .position .content {
+    text-align: left !important;
+    left: 20px !important;
+    right: 0 !important;
+  }
+
+  .experience.section .timeline .position .date.range {
+    left: 60px;
+    position: relative;
+    text-align: left;
+  }
+
+  .experience.section .timeline .position .company {
+    font-size: 1.25rem;
+  }
 }
 /*!
  * # Semantic UI x.x - Button
@@ -18086,8 +18192,8 @@ ol.ui.horizontal.list li:before,
 
 .ui.menu .orange.active.item,
 .ui.orange.menu .active.item {
-  border-color: #e07b53 !important;
-  color: #e07b53 !important;
+  border-color: #ffb65c !important;
+  color: #ffb65c !important;
 }
 
 .ui.menu .pink.active.item,
@@ -18304,11 +18410,11 @@ ol.ui.horizontal.list li:before,
 /* Orange */
 
 .ui.inverted.orange.menu {
-  background-color: #e07b53;
+  background-color: #ffb65c;
 }
 
 .ui.inverted.orange.pointing.menu .active.item:after {
-  background-color: #e07b53;
+  background-color: #ffb65c;
 }
 
 /* Pink */
@@ -18689,7 +18795,7 @@ ol.ui.horizontal.list li:before,
 }
 
 .solo.menu.toggle > a:hover {
-  color: #057ff2;
+  color: #ffb65c;
 }
 
 .solo.right.menu.toggle {

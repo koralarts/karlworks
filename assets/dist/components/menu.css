@@ -1089,8 +1089,8 @@
 }
 .ui.menu .orange.active.item,
 .ui.orange.menu .active.item {
-  border-color: #e07b53 !important;
-  color: #e07b53 !important;
+  border-color: #ffb65c !important;
+  color: #ffb65c !important;
 }
 .ui.menu .pink.active.item,
 .ui.pink.menu .active.item {
@@ -1282,10 +1282,10 @@
 
 /* Orange */
 .ui.inverted.orange.menu {
-  background-color: #e07b53;
+  background-color: #ffb65c;
 }
 .ui.inverted.orange.pointing.menu .active.item:after {
-  background-color: #e07b53;
+  background-color: #ffb65c;
 }
 
 /* Pink */
@@ -1621,7 +1621,7 @@
   cursor: pointer;
 }
 .solo.menu.toggle > a:hover {
-  color: #057ff2;
+  color: #ffb65c;
 }
 .solo.right.menu.toggle {
   text-align: right;

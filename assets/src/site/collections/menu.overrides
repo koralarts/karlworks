@@ -19,7 +19,7 @@
 }
 
 .solo.menu.toggle > a:hover {
-    color: @brandPrimaryColor;
+    color: @orange;
 }
 
 .solo.right.menu.toggle {

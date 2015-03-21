@@ -72,8 +72,13 @@
 }
 
 .section > .content {
-    margin: auto !important;
-    width: 75% !important;
+    margin: auto;
+    position: relative;
+}
+
+.section > .ui.content.grid {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .section.center.aligned {
@@ -107,13 +112,86 @@
     font-size: 2.5rem;
 }
 
+.experience.section .timeline {
+    padding-top: 2em;
+    text-align: left;
+}
+
+.experience.section .timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 4px;
+    background: @orange;
+}
+
+.experience.section .timeline .position {
+    height: 100px;
+}
+
+.position:nth-child(odd) .content {
+    position: absolute;
+    text-align: right;
+    right: 60%;
+}
+
+.position:nth-child(even) .content {
+    position: absolute;
+    left: 60%;
+    right: 0;
+}
+
+.experience.section .timeline .position .date.range {
+    background-color: @white;
+    padding: 10px 0;
+    z-index: 999;
+    position: absolute;
+    left: 50%;
+    width: 150px;
+    margin-left: -75px;
+    text-align: center;
+}
+
+.experience.section .timeline .position .company {
+    font-size: 1.75rem;
+    font-weight: 800;
+    display: block;
+}
+
+.experience.section .timeline .position .company + span {
+    font-style: italic;
+}
+
+.education.section {
+    background-image: url('../images/education.png');
+}
+
+.education.section .grid {
+    text-align: center;
+}
+
+.education.section img {
+    width: 100%;
+    height: auto;
+}
+
+.education.section .degree {
+    font-size: 1.75rem;
+}
+
 .portfolio.section img {
     width: 100%;
     height: auto;
 }
 
+.portfolio.section .column a {
+    color: @black;
+}
+
 .contact.section {
-    background-color: @brandSecondaryDark;
+    background-image: url('../images/contact.png');
 }
 
 .contact.section .header  {
@@ -126,8 +204,42 @@
 
 .contact.section .social.widget a {
     color: @white;
+    text-align: center;
 }
 
 .contact.section .social.widget a:hover {
     color: @orange;
+}
+
+@media only screen and (min-width: @tabletBreakpoint) and (max-width: @largestTabletScreen) {
+    
+}
+
+@media only screen and (min-width: @mobileBreakpoint) and (max-width: @largestMobileScreen) {
+    
+    .experience.section .timeline {
+        padding-top: 2em;
+        text-align: left;
+    }
+
+    .experience.section .timeline:before {
+        left: 0;
+    }
+        
+    .position .content {
+        text-align: left !important;
+        left: 20px !important;
+        right: 0 !important;
+    }
+
+    .experience.section .timeline .position .date.range {
+        left: 60px;
+        position: relative;
+        text-align: left;
+    }
+
+    .experience.section .timeline .position .company {
+        font-size: 1.25rem;
+    }
+    
 }
